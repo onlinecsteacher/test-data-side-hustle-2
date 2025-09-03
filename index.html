@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Hustle Employability Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Side Hustle Employability Tracker</h1>
+        
+        <form id="side-hustle-form">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="categoryType">Category Type:</label>
+                <select id="categoryType" name="categoryType" required>
+                    <option value="">Select a category</option>
+                    <option value="Job">Job</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Volunteering">Volunteering</option>
+                    <option value="Club">Club</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="barrierToEntry">Barrier to Entry:</label>
+                <select id="barrierToEntry" name="barrierToEntry" required>
+                    <option value="">Select barrier level</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="collegeAdmissions">Helps with College Admissions:</label>
+                <select id="collegeAdmissions" name="collegeAdmissions" required>
+                    <option value="">Select level</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="technicalSkills">Technical and Skills Required:</label>
+                <input type="text" id="technicalSkills" name="technicalSkills" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nonFinancialBenefits">Non-financial Benefits:</label>
+                <input type="text" id="nonFinancialBenefits" name="nonFinancialBenefits" required>
+            </div>
+
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <div id="entries-display">
+            <h2>Submitted Entries</h2>
+            <div id="entries-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
